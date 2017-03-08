@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="planets_array">
+        <item>@string/tv_modifypassword</item>
+        <item>@string/tv_about</item>
+        <item>@string/tv_newversion</item>
+        <item>@string/tv_logout</item>
+    </array>
+</resources>

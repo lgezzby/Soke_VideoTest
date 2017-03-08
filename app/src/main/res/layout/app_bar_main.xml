@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                                       android:id="@+id/toolbar"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="?attr/actionBarSize"
+                                       android:layout_alignParentTop="true"
+                                       android:background="?attr/colorPrimary"
+                                       android:navigationIcon="@drawable/ic_build_black_24dp"
+                                       app:navigationIcon="@drawable/ic_build_black_24dp">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_recommend"
+            style="@style/style_RadioButton"
+            android:checked="true"
+            android:text="@string/rb_recommend"/>
+
+        <RadioButton
+            android:id="@+id/rb_video"
+            style="@style/style_RadioButton"
+            android:text="@string/rb_video"/>
+
+        <RadioButton
+            android:id="@+id/rb_chat"
+            style="@style/style_RadioButton"
+            android:text="@string/rb_chat"/>
+
+        <RadioButton
+            android:id="@+id/rb_recipe"
+            style="@style/style_RadioButton"
+            android:text="@string/rb_recipe"/>
+
+        <RadioButton
+            android:id="@+id/rb_course"
+            style="@style/style_RadioButton"
+            android:text="@string/rb_course"/>
+
+        <RadioButton
+            android:id="@+id/rb_userinfo"
+            style="@style/style_RadioButton"
+            android:text="@string/rb_userinfo"/>
+    </RadioGroup>
+
+    <com.example.zhengboyi.soke_videotest.NoScrollViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/radioGroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/toolbar">
+    </com.example.zhengboyi.soke_videotest.NoScrollViewPager>
+
+</RelativeLayout>

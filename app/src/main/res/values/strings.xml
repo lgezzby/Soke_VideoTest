@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Soke_VideoTest</string>
+
+    <!--登录页面 Begin-->
+    <string name="login_username">用户名</string>
+    <string name="login_password">密码</string>
+    <string name="login_auto">自动登录</string>
+    <string name="login_submit">登录</string>
+    <string name="login_register">注册账号</string>
+    <string name="login_forget">忘记密码</string>
+    <!--登录页面 End-->
+
+    <!--主页面 Begin-->
+    <string name="rb_recommend">推荐</string>
+    <string name="rb_video">视频</string>
+    <string name="rb_chat">聊天</string>
+    <string name="rb_recipe">食谱</string>
+    <string name="rb_course">课程</string>
+    <string name="rb_userinfo">用户</string>
+    <!--主页面 End-->
+
+    <!--设置 Begin-->
+    <string name="tv_setting">设置</string>
+    <string name="tv_modifypassword">修改密码</string>
+    <string name="tv_about">关于</string>
+    <string name="tv_newversion">检查新版本</string>
+    <string name="tv_logout">退出</string>
+    <!--设置 End-->
+
+    <!--Video页面 Begin-->
+    <string name="rb_live">直播</string>
+    <string name="rb_VOD">点播</string>
+    <!--Video页面 End-->
+
+    <!--UserinfoFragment Begin-->
+    <string name="tv_userinfo">账户信息</string>
+    <string name="tv_addparent">添加家长</string>
+    <string name="tv_addchild">添加孩子</string>
+    <!--UserinfoFragment End-->
+
+    <!--Accountinfo Begin-->
+    <string name="tv_portrait">头像</string>
+    <string name="tv_currentusername">当前用户名</string>
+    <string name="tv_email">邮箱</string>
+    <string name="tv_remainder">余额</string>
+    <string name="tv_recharge">充值</string>
+    <string name="tv_purchasehistory">查看消费记录</string>
+    <!--Accountinfo End-->
+
+    <!--Recharge Begin-->
+    <string name="tv_remain">您当前的账户余额为:</string>
+    <string name="tv_paynumber">请输入充值金额:</string>
+    <string name="btn_alipay">去支付宝充值</string>
+    <string name="tv_paycontent">如遇到充值成功而钱未入账的情况，请在支付宝中查询并记录商户订单号和支付宝订单号，并查询客服。</string>
+    <!--Recharge End-->
+</resources>

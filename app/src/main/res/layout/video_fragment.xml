@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/ll_videofragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_video"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorGray"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_live"
+            style="@style/style_VideoRadioButton"
+            android:checked="true"
+            android:text="@string/rb_live"/>
+
+        <RadioButton
+            android:id="@+id/rb_VOD"
+            style="@style/style_VideoRadioButton"
+            android:text="@string/rb_VOD"/>
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/videoViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rg_video">
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+    <!--VierPger显示广告图片-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_board"
+        android:layout_width="match_parent"
+        android:layout_height="150dip">
+    </android.support.v4.view.ViewPager>
+    <!--TextView-->
+    <TextView
+        android:id="@+id/tv_board_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:alpha="0.7"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorBlack"
+        android:gravity="center_vertical"
+        android:text="这是测试文本"
+        android:textSize="14sp"/>
+    <!--图片指示器View-->
+    <LinearLayout
+        android:id="@+id/ll_board_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"></LinearLayout>
+</RelativeLayout>

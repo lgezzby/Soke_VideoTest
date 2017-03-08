@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.zhengboyi.soke_videotest">
+    <!--权限 Begin-->
+    <!--拍照需要获取SD读写权限及相机权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <!--轮播图权限-->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <!--权限 End-->
+
+    <uses-sdk android:minSdkVersion="11"></uses-sdk>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--登录界面-->
+        <activity android:name=".LoginActivity">
+
+        </activity>
+
+        <!--主界面 其中包括一个ViewPager-->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!--账户信息界面-->
+        <activity android:name=".AccountInfoActivity">
+
+        </activity>
+
+        <!--查看消费记录界面-->
+        <activity android:name=".PurchaseHistoryActivity">
+
+        </activity>
+
+        <!--充值界面-->
+        <activity android:name=".RechargeActivity">
+
+        </activity>
+    </application>
+
+</manifest>

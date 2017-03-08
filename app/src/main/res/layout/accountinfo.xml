@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/accountinfo"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorGray"
+              android:orientation="vertical">
+    <!--Begin-->
+    <LinearLayout
+        android:id="@+id/ll_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5sp">
+
+        <TextView
+            android:id="@+id/tv_portrait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_face_black_70dp"
+            android:gravity="center|left"
+            android:padding="5dp"
+            android:text="@string/tv_portrait"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:padding="5dp"
+            android:text="@string/tv_currentusername"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:padding="5dp"
+            android:text="@string/tv_email"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <!--End-->
+
+    <!--Begin-->
+    <LinearLayout
+        android:id="@+id/ll_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:padding="5dp"
+            android:text="@string/tv_remainder"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:gravity="center|left"
+            android:padding="5dp"
+            android:text="@string/tv_recharge"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_purchasehistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:gravity="center|left"
+            android:padding="5dp"
+            android:text="@string/tv_purchasehistory"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <!--End-->
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+</LinearLayout>
