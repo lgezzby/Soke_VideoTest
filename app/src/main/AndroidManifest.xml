@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.zhengboyi.soke_videotest">
-    <!--权限 Begin-->
+    <!--权限控制 Begin-->
     <!--拍照需要获取SD读写权限及相机权限-->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
@@ -9,7 +9,7 @@
     <!--轮播图权限-->
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
-    <!--权限 End-->
+    <!--权限控制 End-->
 
     <uses-sdk android:minSdkVersion="11"></uses-sdk>
 
