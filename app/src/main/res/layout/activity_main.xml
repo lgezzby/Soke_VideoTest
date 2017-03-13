@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-为实现DrawerLayout抽屉，里面主要实现两部分include主界面和NavigationView抽屉界面
-include包括app_bar_main主界面，里面实现Toolbar,RadioGroup,NoScrollViewPager三部分(Relative)
-NavigationView实现左侧抽屉,里面实现header和menu
+    activity_main 主界面以及侧边栏
+    为实现DrawerLayout抽屉，里面主要实现两部分include主界面和NavigationView抽屉界面
+    include包括app_bar_main主界面，里面实现Toolbar,RadioGroup,NoScrollViewPager三部分(Relative)
+    NavigationView实现左侧抽屉,里面实现header和menu
 -->
 <android.support.v4.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"

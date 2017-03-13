@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    video_fragment 视频界面,其中包含直播和点播
+-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/ll_videofragment"
                 android:layout_width="match_parent"

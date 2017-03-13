@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    accountinfo 账户信息
+-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:id="@+id/accountinfo"
               android:layout_width="match_parent"

@@ -1,26 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    recommend_fragment 推荐页面,包含精彩在线和精彩回顾,整个页面由ScrollView包裹
+-->
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
+    <!--Main Begin-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
+        <!--精彩在线-->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="精彩在线"
-            android:textSize="20sp"/>
-
-        <!--广告界面-->
-        <LinearLayout
-            android:id="@+id/ll_board_viewpager"
-            android:layout_width="match_parent"
-            android:layout_height="160dp"
             android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="精彩在线"
+                android:textSize="20sp"/>
+
+            <!--广告界面-->
+            <LinearLayout
+                android:id="@+id/ll_board_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="vertical">
+            </LinearLayout>
         </LinearLayout>
 
         <!--精彩回顾-->
@@ -68,4 +79,6 @@
         </LinearLayout>
 
     </LinearLayout>
+    <!--Main End-->
+
 </ScrollView>

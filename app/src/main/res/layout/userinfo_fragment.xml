@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    userinfo_fragment 用户信息界面
+-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:id="@+id/userinfo_fragment"
               android:layout_width="match_parent"

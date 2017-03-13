@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    app_bar_main 顶部实现Toolbar替代Actionbar,中间实现NoScrollViewPager显示页面,
+    底部实现RadioGroup按键选择
+-->
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_main"
