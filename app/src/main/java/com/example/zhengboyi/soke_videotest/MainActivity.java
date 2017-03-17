@@ -27,6 +27,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    /*
+        初始化各组件
+    */
     /*ViewPager*/
     NoScrollViewPager viewPager;
     RadioGroup radioGroup;
