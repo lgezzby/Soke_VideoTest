@@ -68,7 +68,7 @@ public class WebServiceGet {
         return new String(data, "UTF-8");
     }
 
-    private static byte[] read(InputStream is) throws IOException {
+    public static byte[] read(InputStream is) throws IOException {
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         byte[] buffer = new byte[1024];
         int len=0;
