@@ -47,7 +47,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="15dp"
                 android:layout_weight="5"
-                android:editable="false"
+                android:editable="true"
                 android:ellipsize="middle"
                 android:hint="请输入用户名或手机号"
                 android:singleLine="true"/>
@@ -79,7 +79,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="15dp"
                 android:layout_weight="5"
-                android:editable="false"
+                android:editable="true"
                 android:ellipsize="middle"
                 android:hint="请输入密码"
                 android:singleLine="true"/>
