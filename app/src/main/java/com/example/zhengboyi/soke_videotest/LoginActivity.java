@@ -5,10 +5,16 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
 
 /**
  * Login 登录界面
@@ -22,7 +28,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     ProgressDialog progressDialog;
 
     // 返回的数据
-    private String info;
+    private JSONObject info;
+    private String rndNumber = null;
     // 返回主线程更新数据
     private static Handler handler = new Handler();
 
@@ -44,6 +51,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            /** btn_login 登录操作
+             *  首先获取rndNumber
+             *
+             */
             case R.id.btn_login:
                 if (validate()) {
                     progressDialog = new ProgressDialog(this);
@@ -81,11 +92,20 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         @Override
         public void run() {
-            info = WebServiceGet.executeHttpGet(et_username.getText().toString(), et_password.getText().toString());
+            //            info = WebServiceGet.executeHttpGet(et_username.getText().toString(), et_password.getText().toString());
+            try {
+                info = LoginWebService.executeHttp();
+                rndNumber = info.getString("rndNumber");
+                Log.i("rndNumber",rndNumber);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             handler.post(new Runnable() {
                 @Override
                 public void run() {
-                    Toast.makeText(LoginActivity.this,info,Toast.LENGTH_SHORT).show();
+                    Log.i("rndNumber",rndNumber);
                     progressDialog.dismiss();
                 }
             });
